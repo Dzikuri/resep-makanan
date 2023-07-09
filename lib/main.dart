@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo Daftar wisata',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo Resep Makanan',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(color: Colors.blueGrey),
+        primarySwatch: Colors.blueGrey,
       ),
       home: const home(),
     );

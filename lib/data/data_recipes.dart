@@ -22,31 +22,43 @@ class DetailScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(30),
               child: Image.asset(
                 reseps.image,
-                width: 400,
-                height: 250,
+                width: 200,
+                height: 100,
                 fit: BoxFit.cover,
               ),
             ),
           ),
           SizedBox(
-            height: 16,
+            height: 10,
           ),
           Text(
             reseps.name,
             style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 35,
+                fontSize: 18,
                 color: Colors.blueAccent),
           ),
-          Text('HTM: ${reseps.htm}'),
+          Text('  ${reseps.harga}'),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              'Description : ' + reseps.tutorial,
+              'Bahan : ' + reseps.bahan,
               maxLines: 15,
               textAlign: TextAlign.left,
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 14,
+                color: Colors.brown,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              'Cara Membuat : ' + reseps.tutorial,
+              maxLines: 15,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontSize: 14,
                 color: Colors.brown,
               ),
             ),

@@ -9,7 +9,7 @@ class home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Resep Makanan'),
+        title: Text('Daftar Resep Makanan'),
       ),
       body: ListView.builder(
           itemCount: dataResep.length,
@@ -45,8 +45,8 @@ class home extends StatelessWidget {
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25,
-                                color: Colors.blueAccent)),
-                        Text('HTM : ${dataResep[index].htm}'),
+                                color: Colors.blueGrey)),
+                        Text('  ${dataResep[index].harga}'),
                         ClipOval(
                           child: Material(
                             color: Colors.blue, // button color
@@ -55,7 +55,7 @@ class home extends StatelessWidget {
                               child: SizedBox(
                                   width: 30,
                                   height: 30,
-                                  child: Icon(Icons.favorite)),
+                                  child: Icon(Icons.star_rate)),
                               onTap: () {},
                             ),
                           ),
